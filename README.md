@@ -23,7 +23,6 @@ Setup Instructions
 1. Clone the Repository
 To get started with the Event Management System, first clone the repository to your local machine:
 
-bash
 Copy code
 git clone https://github.com/usmanalix03/Event-Management-System.git
 This will download the entire project to your local machine.
@@ -31,8 +30,6 @@ This will download the entire project to your local machine.
 2. Install Dependencies
 Navigate to the backend/server directory and install the necessary dependencies using npm (Node Package Manager):
 
-bash
-Copy code
 cd Event-Management-System/server
 npm install
 This will install all the required packages listed in the package.json file.
@@ -44,8 +41,6 @@ If you don’t have PostgreSQL installed, download and install it from PostgreSQ
 
 Once installed, log in to PostgreSQL and create a database for the project:
 
-bash
-Copy code
 CREATE DATABASE event_management;
 Configure Database Connection:
 
@@ -53,8 +48,6 @@ In the project, locate the database configuration file (usually config.js or db.
 
 Update the configuration with your PostgreSQL credentials:
 
-javascript
-Copy code
 const dbConfig = {
   user: 'your_username',
   host: 'localhost',
@@ -63,29 +56,7 @@ const dbConfig = {
   port: 5432,
 };
 
-3. Start the Backend Server
-Now that you’ve installed the dependencies and set up the database, start the server:
-
-bash
-Copy code
-npm start
-This will start the server, and you should see a message indicating that the backend is running, typically on http://localhost:3000.
-
-4. Access the Frontend
-Open a browser and go to http://localhost:3000.
-
-The Event Management System frontend should now be accessible, allowing users to register, view events, and admins to manage them.
-
-5. Testing
-Test the application by:
-
-Creating events as an admin.
-
-Registering for events as a user.
-
-Verifying that user registrations are reflected in the database.
-
-6. Contributions
+4. Contributions
 If you want to contribute:
 
 Fork the repository and create a new branch.
